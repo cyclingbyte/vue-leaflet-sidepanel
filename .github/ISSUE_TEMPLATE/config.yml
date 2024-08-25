@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussion / Ask a Question
+    url: https://github.com/cyclingbyte/vue-leaflet-sidepanel/discussions/new
+    about: You are not sure whether your request is a bug report or a feature request or you have a question about how something works? Then the discussion forum is the right one!

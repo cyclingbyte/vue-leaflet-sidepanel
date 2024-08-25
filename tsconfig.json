@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node"],
+    "outDir": "./dist"
+  },
+  "include": ["env.d.ts", "src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

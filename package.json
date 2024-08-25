@@ -1,0 +1,78 @@
+{
+  "name": "vue-leaflet-sidepanel",
+  "version": "1.0.0",
+  "description": "Slide side panel plugin for vue-leaflet",
+  "author": "cyclingbyte <cyclingbyte@web.de>",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "main": "dist/vue-leaflet-sidepanel.cjs.js",
+  "unpkg": "dist/vue-leaflet-sidepanel.umd.js",
+  "module": "dist/vue-leaflet-sidepanel.es.js",
+  "types": "dist/lib.d.ts",
+  "files": [
+    "dist/",
+    "CHANGELOG.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyclingbyte/vue-leaflet-sidepanel.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "type-check": "vue-tsc --noEmit",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:unit": "vitest",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "lint:check": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --max-warnings 0 --ignore-path .gitignore || (echo 'Linter failed' && exit 1)",
+    "format": "prettier --write src/",
+    "format:check": "prettier --check src/ || (echo 'Code is not formatted' && exit 1)"
+  },
+  "dependencies": {
+    "leaflet.sidepanel": "^1.2.0"
+  },
+  "peerDependencies": {
+    "@vue-leaflet/vue-leaflet": "^0.10.1"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.8.0",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/jsdom": "^21.1.7",
+    "@types/leaflet": "^1.9.12",
+    "@types/node": "^20.14.5",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "@vue/test-utils": "^2.4.6",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "jsdom": "^24.1.0",
+    "leaflet": "^1.9.4",
+    "prettier": "^3.2.5",
+    "typescript": "~5.4.0",
+    "vite": "^5.3.1",
+    "vite-plugin-dts": "^4.0.3",
+    "vite-plugin-vue-devtools": "^7.3.1",
+    "vitest": "^1.6.0",
+    "vue": "^3.4.38",
+    "vue-router": "^4.4.3",
+    "vue-tsc": "^2.0.21"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "vuejs",
+    "leaflet",
+    "leafletjs",
+    "vue-leaflet",
+    "@vue-leaflet/vue-leaflet",
+    "vue-leaflet-sidepanel",
+    "vue-leaflet-sidebar",
+    "leaflet-sidepanel",
+    "leaflet-sidebar"
+  ]
+}

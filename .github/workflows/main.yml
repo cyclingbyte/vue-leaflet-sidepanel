@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  merge-checks:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        job: ['lint', 'format:check', 'type-check']
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '21'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run ${{ matrix.job }}
+        run: npm run ${{ matrix.job }}
