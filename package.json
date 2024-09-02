@@ -50,7 +50,7 @@
     "@vue/tsconfig": "^0.5.1",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
-    "jsdom": "^24.1.0",
+    "jsdom": "^25.0.0",
     "leaflet": "^1.9.4",
     "prettier": "^3.2.5",
     "typescript": "~5.4.0",
