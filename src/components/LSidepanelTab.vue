@@ -8,7 +8,9 @@
 </template>
 
 <script setup lang="ts">
-  const { link, level, heading } = withDefaults(
+  import { toRefs } from 'vue';
+
+  const props = withDefaults(
     defineProps<{
       link: number | string;
       level?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
@@ -19,4 +21,5 @@
       heading: undefined,
     }
   );
+  const { link, level, heading } = toRefs(props);
 </script>
