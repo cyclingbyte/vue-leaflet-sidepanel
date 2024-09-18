@@ -1,6 +1,6 @@
 <template>
   <div class="sidepanel-tab-content" :data-tab-content="`tab-${link}`">
-    <component v-if="!!heading" :is="level">
+    <component :is="level" v-if="!!heading">
       {{ heading }}
     </component>
     <slot></slot>
@@ -16,6 +16,7 @@
     }>(),
     {
       level: 'h3',
+      heading: undefined,
     }
   );
 </script>

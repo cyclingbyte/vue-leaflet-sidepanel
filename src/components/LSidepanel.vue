@@ -49,10 +49,12 @@
   import LSidepanelTabNav from './LSidepanelTabNav.vue';
 
   // Define Types
-  type SidePanelPositionHeadings = { key: string | number; value: string }[];
+  type SidePanelPositionHeadings =
+    | { key: string | number; value: string }[]
+    | undefined;
 
   // Define model
-  const isOpen = defineModel<Boolean>({ default: false, required: false });
+  const isOpen = defineModel<boolean>({ default: false, required: false });
   watch(isOpen, (value) => {
     if (!panel.value) return; // Prevents open/close before panel is mounted
     if (value) open();
@@ -79,9 +81,11 @@
       pushControls?: boolean;
     }>(),
     {
+      headings: undefined,
       position: 'left',
       tabsPosition: 'top',
       darkMode: false,
+      defaultTab: undefined,
       pushControls: false,
     }
   );

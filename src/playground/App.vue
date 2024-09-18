@@ -10,7 +10,7 @@
       <l-sidepanel
         id="leftPanel"
         :headings
-        tabsPosition="left"
+        tabs-position="left"
         @tab-click="onTabClick"
       >
         <template #[`heading.1`]>
@@ -68,8 +68,8 @@
         </l-sidepanel-tab>
       </l-sidepanel>
       <l-sidepanel
-        v-model="rigthPanel"
         id="rigthPanel"
+        v-model="rigthPanel"
         position="right"
         dark-mode
         push-controls
