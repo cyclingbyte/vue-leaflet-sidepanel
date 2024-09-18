@@ -62,15 +62,7 @@
   });
 
   // Define props
-  const {
-    id,
-    headings,
-    position,
-    tabsPosition,
-    darkMode,
-    defaultTab,
-    pushControls,
-  } = withDefaults(
+  const props = withDefaults(
     defineProps<{
       id: string;
       headings?: SidePanelPositionHeadings;
@@ -89,6 +81,15 @@
       pushControls: false,
     }
   );
+  const {
+    id,
+    headings,
+    position,
+    tabsPosition,
+    darkMode,
+    defaultTab,
+    pushControls,
+  } = props;
 
   // Define Emits
   const emit = defineEmits<{
