@@ -64,7 +64,7 @@ Feel free to ask questions in the discussion area if something is not clear
         </l-sidepanel-tab>
         <!-- [...] -->
       </l-sidepanel>
-      <l-sidepanel id="rigthPanel" position="right" dark-mode></l-sidepanel>
+      <l-sidepanel id="rigthPanel" position="right" size="300px" dark-mode />
     </l-map>
   </div>
 </template>
