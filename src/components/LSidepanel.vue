@@ -71,14 +71,16 @@
       darkMode?: boolean;
       defaultTab?: string | number;
       pushControls?: boolean;
+      size?: string;
     }>(),
     {
       headings: undefined,
       position: 'left',
       tabsPosition: 'top',
       darkMode: false,
-      defaultTab: undefined,
+      defaultTab: 1,
       pushControls: false,
+      size: '400px',
     }
   );
   const {
@@ -89,6 +91,7 @@
     darkMode,
     defaultTab,
     pushControls,
+    size,
   } = props;
 
   // Define Emits
@@ -111,14 +114,15 @@
     sidePanel.value = L.control.sidepanel(id, {
       panelPosition: position,
       hasTabs: headings && headings.length > 0,
-      tabsPosition: tabsPosition,
-      darkMode: darkMode,
+      tabsPosition,
+      darkMode,
       defaultTab: defaultTab || headings?.[0]?.key,
-      pushControls: pushControls,
+      pushControls,
+      size,
       onTabClick: (tab: HTMLElement) => emit('tabClick', tab),
       onToggle: (opened: boolean) => (isOpen.value = opened),
     });
-    sidePanel.value.addTo(map.value as unknown as L.Map); // Add to expected L.Map but also accepts HTMLElement
+    sidePanel.value.addTo(map.value as unknown as L.Map); // expected L.Map but also accepts HTMLElement
     // Intial open/close
     if (isOpen.value) open();
     else close();

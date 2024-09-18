@@ -71,6 +71,7 @@
         id="rigthPanel"
         v-model="rigthPanel"
         position="right"
+        size="300px"
         dark-mode
         push-controls
       >
