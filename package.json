@@ -53,7 +53,7 @@
     "jsdom": "^25.0.0",
     "leaflet": "^1.9.4",
     "prettier": "^3.2.5",
-    "typescript": "~5.4.0",
+    "typescript": "~5.6.2",
     "vite": "^5.4.6",
     "vite-plugin-dts": "^4.0.3",
     "vite-plugin-vue-devtools": "^7.3.1",
