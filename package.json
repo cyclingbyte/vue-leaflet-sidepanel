@@ -31,7 +31,7 @@
     "format:check": "prettier --check src/ || (echo 'Code is not formatted' && exit 1)"
   },
   "dependencies": {
-    "leaflet.sidepanel": "^1.2.1"
+    "leaflet.sidepanel": "^1.2.2"
   },
   "peerDependencies": {
     "@vue-leaflet/vue-leaflet": "^0.10.1"
