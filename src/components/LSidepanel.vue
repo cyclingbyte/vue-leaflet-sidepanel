@@ -45,13 +45,12 @@
   import * as L from 'leaflet';
   import 'leaflet.sidepanel';
   import 'leaflet.sidepanel/dist/style.css';
-  import { onMounted, useSlots, ref, watch } from 'vue';
+  import { onMounted, useSlots, ref, watch, type Slots } from 'vue';
   import LSidepanelTabNav from './LSidepanelTabNav.vue';
 
   // Define Types
-  type SidePanelPositionHeadings =
-    | { key: string | number; value: string }[]
-    | undefined;
+  type SidePanelPositionHeading = { key: string | number; value: string };
+  type SidePanelPositionHeadings = SidePanelPositionHeading[] | undefined;
 
   // Define model
   const isOpen = defineModel<boolean>({ default: false, required: false });
@@ -100,7 +99,7 @@
   }>();
 
   // use slots
-  const slots = useSlots();
+  const slots: Slots = useSlots();
 
   // Initialize the side panel
   const map = ref<HTMLElement | null>(null);
