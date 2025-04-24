@@ -28,13 +28,21 @@ export default defineConfig({
       fileName: (format) => `vue-leaflet-sidepanel.${format}.js`,
     },
     rollupOptions: {
-      external: ['vue', 'leaflet', /^leaflet\/.*/, /^@vue-leaflet\/.*/],
+      external: [
+        'vue',
+        'leaflet',
+        /^leaflet\/.*/,
+        /^@vue-leaflet\/.*/,
+        'leaflet.sidepanel',
+        'leaflet.sidepanel/dist/style.css', // Add this line
+      ],
       output: {
         // Global variables for use in the UMD build
         globals: {
           vue: 'Vue',
           leaflet: 'L',
           '@vue-leaflet/vue-leaflet': '@vue-leaflet/vue-leaflet',
+          'leaflet.sidepanel': 'L.SidePanel',
         },
       },
     },
