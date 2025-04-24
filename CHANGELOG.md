@@ -1,14 +1,15 @@
 # Leaflet.SidePanel Changelog
 
+## v1.1.2 (2025-04-24)
+
+- chore(deps): Bump leaflet.sidepanel from 1.2.1 to 1.2.2
+  - fixes unexpected behavior on passing `undefined` to `options` see [Leaflet.SidePanel#40](https://github.com/cyclingbyte/Leaflet.SidePanel/issues/40)
+- chore(dev-deps): Bump some dev-deps to stay up to date and fix some vulnerabilities
+- chore(CI): Add permissions to workflows
+
 ## v1.1.1 (2024-11-14)
 
-### Security
-
-- chore(deps): bump rollup from 4.21.3 to 4.25.0 in the npm_and_yarn group<br />
-  See [DOM Clobbering Gadget found in rollup bundled scripts that leads to XSS](https://github.com/cyclingbyte/vue-leaflet-sidepanel/security/dependabot/1)
-
-### Dependencies
-
+- chore(deps-dev): bump rollup from 4.21.3 to 4.25.0 in the npm_and_yarn group
 - chore(deps-dev): bump vue from 3.5.6 to 3.5.12
 - chore(deps-dev): bump eslint-plugin-oxlint from 0.9.6 to 0.11.1
 - chore(deps-dev): bump vite from 5.4.6 to 5.4.11
