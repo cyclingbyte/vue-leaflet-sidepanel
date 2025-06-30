@@ -10,6 +10,7 @@
   "unpkg": "dist/vue-leaflet-sidepanel.umd.js",
   "module": "dist/vue-leaflet-sidepanel.es.js",
   "types": "dist/lib.d.ts",
+  "style": "dist/vue-leaflet-sidepanel.css",
   "files": [
     "dist/",
     "CHANGELOG.md"

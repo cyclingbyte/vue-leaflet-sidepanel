@@ -71,7 +71,7 @@ Feel free to ask questions in the discussion area if something is not clear
 
 <script setup lang="ts">
   import 'leaflet/dist/leaflet.css';
-  import 'vue-leaflet-sidepanel/dist/style.css';
+  import 'vue-leaflet-sidepanel/dist/vue-leaflet-sidepanel.css';
   import { LMap, LTileLayer } from '@vue-leaflet/vue-leaflet';
   import { LSidepanel, LSidepanelTab } from 'vue-leaflet-sidepanel';
 

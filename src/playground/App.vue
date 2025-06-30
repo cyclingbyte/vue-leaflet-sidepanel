@@ -93,7 +93,6 @@
 
 <script setup lang="ts">
   import { ref, watch } from 'vue';
-  import 'leaflet/dist/leaflet.css';
   import { LMap, LTileLayer } from '@vue-leaflet/vue-leaflet';
   import LSidepanel from '../components/LSidepanel.vue';
   import LSidepanelTab from '../components/LSidepanelTab.vue';

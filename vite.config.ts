@@ -34,7 +34,6 @@ export default defineConfig({
         /^leaflet\/.*/,
         /^@vue-leaflet\/.*/,
         'leaflet.sidepanel',
-        'leaflet.sidepanel/dist/style.css', // Add this line
       ],
       output: {
         // Global variables for use in the UMD build

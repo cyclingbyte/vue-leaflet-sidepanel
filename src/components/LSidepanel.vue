@@ -44,7 +44,6 @@
 <script setup lang="ts">
   import * as L from 'leaflet';
   import 'leaflet.sidepanel';
-  import 'leaflet.sidepanel/dist/style.css';
   import { onMounted, useSlots, ref, watch, type Slots } from 'vue';
   import LSidepanelTabNav from './LSidepanelTabNav.vue';
 
