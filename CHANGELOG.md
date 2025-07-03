@@ -1,5 +1,11 @@
 # Leaflet.SidePanel Changelog
 
+## v1.2.0 (2025-07-03)
+
+fix: CSS is missing in build
+chore: ⚠️ BREAKING ⚠️ the `style.css` was renamed to `vue-leaflet-sidepanel.css`
+chore: update some dependencies
+
 ## v1.1.2 (2025-04-24)
 
 - chore(deps): Bump leaflet.sidepanel from 1.2.1 to 1.2.2

@@ -1,6 +1,6 @@
 {
   "name": "vue-leaflet-sidepanel",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Slide side panel plugin for vue-leaflet",
   "author": "cyclingbyte <cyclingbyte@web.de>",
   "license": "MIT",
@@ -32,7 +32,7 @@
     "format:check": "prettier --check src/ || (echo 'Code is not formatted' && exit 1)"
   },
   "dependencies": {
-    "leaflet.sidepanel": "^1.2.2"
+    "leaflet.sidepanel": "^1.2.3"
   },
   "peerDependencies": {
     "@vue-leaflet/vue-leaflet": "^0.10.1"
